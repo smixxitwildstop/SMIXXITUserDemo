@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/justin_bieber_coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wildstop.smixxitdemo.KylieJennerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#353333"
+            app:popupTheme="@style/PopupOverlay" >
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+
+
+          <com.mikhaellopez.circularimageview.CircularImageView
+              android:layout_centerVertical="true"
+              android:id="@+id/bieber_circle_image"
+              app:civ_border_width="0dp"
+              android:src="@mipmap/kylie_img"
+              android:layout_width="47dp"
+              android:layout_height="47dp" />
+
+
+          <TextView
+              android:id="@+id/textview_kylie_jenner"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="8dp"
+              android:textSize="20dp"
+              android:gravity="start"
+              android:textStyle="bold"
+              android:textColor="@android:color/white"
+              android:text="KYLIE JENNER"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+
+
+
+
+      </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_kylie_jenner" />
+
+    <com.github.rubensousa.floatingtoolbar.FloatingToolbar
+        android:backgroundTint="#329EAE"
+        android:id="@+id/floatingToolbar_stream"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:floatingMenu="@menu/main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@mipmap/smixxit_logo"
+        app:backgroundTint="@color/colorGrey"
+        android:layout_margin="10dp"
+        android:id="@+id/fab_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

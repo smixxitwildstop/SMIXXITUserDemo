@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sample_stream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wildstop.smixxitdemo.SampleStream"
+    tools:showIn="@layout/activity_sample_stream">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/smixxit_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textstreaming"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="STREAMING"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <VideoView
+        android:layout_marginBottom="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/textstreaming"
+        android:id="@+id/video_view"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+       />
+
+<RelativeLayout
+    android:layout_marginTop="400dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.google.android.cameraview.CameraView
+        app:autoFocus="true"
+        app:aspectRatio="16:9"
+        app:facing="front"
+        app:flash="off"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/videoViewSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="start"
+            layout="@layout/friendsinstream"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

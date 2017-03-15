@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SMIXXIT</string>
+    <string name="title_activity_justin_bieber">JustinBieberActivity</string>
+    <string name="title_activity_sample_stream">SampleStream</string>
+    <string name="title_activity_sample_stream_keno">SampleStreamKeno</string>
+</resources>

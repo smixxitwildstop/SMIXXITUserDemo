@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="#c8268698"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="match_parent">
+
+
+  
+    
+    <TextView
+        android:id="@+id/streamstats"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:text="STREAM COUNT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/streamcount"
+        android:textSize="30sp"
+        android:layout_below="@+id/streamstats"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:text="120K"
+        android:background="@color/colorAccent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/comments"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorGrey"
+        android:layout_below="@id/streamcount"
+        android:text="Comments"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/commentsk"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center"
+        android:layout_below="@+id/comments"
+        android:text="50K"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/smixxlikes"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="SMIXXLIKES"
+        android:background="@color/colorGrey"
+        android:layout_below="@id/commentsk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/smixxlikess"
+        android:gravity="center"
+        android:layout_below="@id/smixxlikes"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:text="120K"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/blank"
+        android:background="@color/colorGrey"
+        android:layout_below="@id/smixxlikess"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/friends"
+        android:textColor="@android:color/white"
+        android:background="@color/colorGrey"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Friends In Stream"
+        android:layout_below="@id/blank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+
+
+   <ScrollView
+       android:layout_below="@id/friends"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend1"
+               android:layout_marginTop="20dp"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend2"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend1"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend3"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend2"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend4"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend3"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend5"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend4"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend6"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend5"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend7"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend6"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend8"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend7"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend9"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend8"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend10"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend9"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend11"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend10"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend12"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend11"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />\
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend13"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend12"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend14"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend13"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend15"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend14"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend16"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend15"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend17"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend16"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend18"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend17"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend19"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend18"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+           <com.mikhaellopez.circularimageview.CircularImageView
+               android:id="@+id/testfriend20"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/testfriend19"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+
+   </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

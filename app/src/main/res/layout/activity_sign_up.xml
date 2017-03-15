@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353333"
+    tools:context="com.wildstop.smixxitdemo.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageview_smixxit_logo"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/smixxit_logo"
+        android:layout_width="200dp"
+        android:layout_height="120dp" />
+
+    <RelativeLayout
+        android:id="@+id/signup_items_placeholder"
+        android:layout_below="@+id/imageview_smixxit_logo"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Email Address"
+            android:id="@+id/textview_emailaddress_sign_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="#329EAE"
+            android:singleLine="true"
+            android:backgroundTint="#C90065"
+            android:layout_below="@+id/textview_emailaddress_sign_up"
+            android:id="@+id/editext_emailaddress_sign_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_password_sign_up"
+            android:layout_below="@+id/editext_emailaddress_sign_up"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:textColor="#329EAE"
+            android:singleLine="true"
+            android:backgroundTint="#C90065"
+            android:layout_below="@+id/textview_password_sign_up"
+            android:id="@+id/editext_password_sign_up"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_dateofbirth_sign_up"
+            android:layout_below="@+id/editext_password_sign_up"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Date Of Birth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="#329EAE"
+            android:singleLine="true"
+            android:backgroundTint="#C90065"
+            android:layout_below="@id/textview_dateofbirth_sign_up"
+            android:id="@+id/editext_dateofbirth_sign_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/editext_dateofbirth_sign_up"
+            android:id="@+id/textview_country_sign_up"
+            android:text="Country Of Residence"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="#329EAE"
+            android:singleLine="true"
+            android:layout_below="@+id/textview_country_sign_up"
+            android:id="@+id/editext_countryofbirth_sign_up"
+            android:backgroundTint="#C90065"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_gender_sign_up"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/editext_countryofbirth_sign_up"
+            android:text="Gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="#329EAE"
+            android:singleLine="true"
+            android:backgroundTint="#C90065"
+            android:layout_below="@+id/textview_gender_sign_up"
+            android:id="@+id/editext_gender_sign_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/signup_items_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/completeSignUpButton"
+            android:textStyle="bold"
+            android:text="Complete Sign Up"
+            android:background="#C90065"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+
+      <ImageView
+          android:layout_gravity="center"
+          android:src="@mipmap/left_img"
+          android:adjustViewBounds="true"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" />
+
+      <ImageView
+          android:layout_gravity="center"
+          android:src="@mipmap/left_imgg"
+          android:adjustViewBounds="true"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" />
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

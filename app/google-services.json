@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "990339007579",
+    "firebase_url": "https://freelance-work-472d2.firebaseio.com",
+    "project_id": "freelance-work-472d2",
+    "storage_bucket": "freelance-work-472d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990339007579:android:efaa5fa8ae9e3419",
+        "android_client_info": {
+          "package_name": "com.wildstop.smixxit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990339007579-i158dkmrv1la6bio8t69bqt0vadpd2hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh9u1BHpgY-N7zEvEOtVd4k3nm9o7UET0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990339007579-i158dkmrv1la6bio8t69bqt0vadpd2hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990339007579:android:fc057cfadb597167",
+        "android_client_info": {
+          "package_name": "com.wildstop.smixxitdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990339007579-i158dkmrv1la6bio8t69bqt0vadpd2hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh9u1BHpgY-N7zEvEOtVd4k3nm9o7UET0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990339007579-i158dkmrv1la6bio8t69bqt0vadpd2hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

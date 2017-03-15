@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_explore_screen">
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+      <TextView
+          android:textStyle="bold"
+          android:gravity="center"
+          android:text="NEW MEMBERS ON SMIXXIT"
+          android:id="@+id/text_1"
+          android:background="@color/colorAccent"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" />
+
+
+      <pl.droidsonroids.gif.GifImageView
+          android:layout_below="@+id/text_1"
+          android:background="@mipmap/grid_one"
+          android:id="@+id/imageview_1"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"/>
+
+      <TextView
+          android:text="FEATURED COPPER SMIXXIT MEMEBERS"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:background="@color/colorAccent"
+          android:id="@+id/text_2"
+          android:layout_below="@+id/imageview_1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" />
+      <pl.droidsonroids.gif.GifImageView
+          android:background="@mipmap/grid_two"
+          android:layout_below="@+id/text_2"
+          android:id="@+id/imageview_2"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"/>
+
+      <TextView
+          android:text="FEATURED SMIXXIT GOLD MEMBERS"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:background="@color/colorAccent"
+          android:id="@+id/text_3"
+          android:layout_below="@+id/imageview_2"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" />
+      <pl.droidsonroids.gif.GifImageView
+          android:background="@mipmap/grid_three"
+          android:layout_below="@id/text_3"
+          android:id="@+id/imageview_3"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"/>
+
+      <TextView
+          android:text="FEATURED SILVER SMIXXIT MEMBERS"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:background="@color/colorAccent"
+          android:id="@+id/text_4"
+          android:layout_below="@+id/imageview_3"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" />
+      <pl.droidsonroids.gif.GifImageView
+          android:background="@mipmap/grid_four"
+          android:layout_below="@id/text_4"
+          android:id="@+id/imageview_4"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"/>
+
+
+
+
+
+   </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

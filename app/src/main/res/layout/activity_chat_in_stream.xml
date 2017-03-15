@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat_in_stream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8268698"
+    tools:context="com.wildstop.smixxitdemo.ChatInStream">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bri"
+        android:gravity="center"
+        android:textColor="@color/colorGrey"
+        android:textStyle="bold"
+        android:text="Bri Williams"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/chat_img"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:hint="Begin Typing..."
+        android:layout_above="@+id/exit_chat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/exit_chat"
+       android:textStyle="bold"
+       android:textColor="@android:color/holo_red_light"
+       android:text="EXIT CHAT"
+       android:background="#af030303"
+       android:layout_alignParentBottom="true"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+</RelativeLayout>

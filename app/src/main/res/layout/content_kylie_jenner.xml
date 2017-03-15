@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_justin_bieber"
+    android:layout_width="match_parent"
+    android:background="#353333"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wildstop.smixxitdemo.KylieJennerActivity"
+    tools:showIn="@layout/kylie_jenner">
+
+
+    <RelativeLayout
+        android:id="@+id/countdowntimer_view"
+        android:background="#353333"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+
+
+        <TextView
+            android:textColor="#329EAE"
+            android:id="@+id/textview_status"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:text="NEXT STREAM IN: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+
+            android:layout_centerVertical="true"
+           android:background="#353333"
+            android:layout_toEndOf="@id/textview_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <pl.kitek.timertextview.TimerTextView
+                android:background="#329EAE"
+                android:textColor="#282727"
+                android:textStyle="bold"
+                android:id="@+id/timerText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:text="NOW LIVE"
+                android:background="#329EAE"
+                android:textColor="#282727"
+                android:textStyle="bold"
+                android:id="@+id/textLIVE"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/countdowntimer_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:id="@+id/joinStreamButton"
+            android:visibility="invisible"
+            android:textColor="#282727"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:text="JOIN STREAM"
+            android:background="#32ae4d"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ImageView
+                    android:layout_marginTop="35dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/kyliestreamfeednew"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

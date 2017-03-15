@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/justin_bieber_coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wildstop.smixxitdemo.KylieJennerActivity">
+
+
+    <RelativeLayout
+        android:background="@color/colorGrey"
+        android:layout_marginTop="55dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/countdowntimer_view"
+            android:background="#353333"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+
+
+            <TextView
+                android:textColor="#329EAE"
+                android:id="@+id/textview_status"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:text="NEXT STREAM IN: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+
+                android:layout_centerVertical="true"
+                android:background="#353333"
+                android:layout_toEndOf="@id/textview_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <pl.kitek.timertextview.TimerTextView
+                    android:background="#329EAE"
+                    android:textColor="#282727"
+                    android:textStyle="bold"
+                    android:id="@+id/timerText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:text="NOW LIVE"
+                    android:background="#329EAE"
+                    android:textColor="#282727"
+                    android:textStyle="bold"
+                    android:id="@+id/textLIVE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="24sp"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:background="@color/colorGrey"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/countdowntimer_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <Button
+                android:id="@+id/joinStreamButton"
+                android:visibility="invisible"
+                android:textColor="#282727"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_alignParentBottom="true"
+                android:text="JOIN STREAM"
+                android:background="#32ae4d"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#353333"
+            app:popupTheme="@style/PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/bieber_circle_image"
+                    app:civ_border_width="0dp"
+                    android:src="@mipmap/kenoimg"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp" />
+
+
+                <TextView
+                    android:id="@+id/textview_kylie_jenner"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20dp"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="KENOSHA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <TextView
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Keno Has No Previous Streams :-( "
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <com.github.rubensousa.floatingtoolbar.FloatingToolbar
+        android:backgroundTint="#329EAE"
+        android:id="@+id/floatingToolbar_stream"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:floatingMenu="@menu/main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@mipmap/smixxit_logo"
+        app:backgroundTint="@color/colorGrey"
+        android:layout_margin="10dp"
+        android:id="@+id/fab_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
